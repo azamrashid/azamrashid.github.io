@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #031051;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #031051;
+    color: #fff;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 100px 0;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.section {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+}
+
+.section:nth-child(even) {
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about, #education, #experience, #projects-skills, #contact {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#about img, #hero img {
+    display: block;
+    margin: 20px auto;
+}
+
+#projects-skills .projects-skills-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#projects-skills .projects, #projects-skills .skills {
+    flex: 1;
+    margin: 0 10px;
+}
+
+#projects-skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact .form-group {
+    margin-bottom: 20px;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #031051;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #031051;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #031051;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}
